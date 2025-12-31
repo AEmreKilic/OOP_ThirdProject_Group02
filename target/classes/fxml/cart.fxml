@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="edu.khas.cmpe343.group5.ProductCardController">
+    <Label text="Your Cart" />
+    <!-- Sepet ürünleri burada olacak -->
+    <Button text="Proceed to Checkout" />
+</VBox>

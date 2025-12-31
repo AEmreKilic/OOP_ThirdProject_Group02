@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx/22.0.1"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="edu.khas.cmpe343.group5.ProductCardController"
+      spacing="5"
+      style="-fx-padding: 10; -fx-border-color: #dddddd; -fx-border-radius: 5; -fx-background-radius: 5;">
+
+    <children>
+
+        <!-- Ürün resmi -->
+        <ImageView fx:id="productImage"
+                   fitWidth="150"
+                   fitHeight="90"
+                   preserveRatio="true" />
+
+        <!-- Ürün adı -->
+        <Label fx:id="productName"
+               text="Product Name"
+               style="-fx-font-weight: bold;" />
+
+        <!-- Ürün fiyatı -->
+        <Label fx:id="productPrice"
+               text="₺0 / kg" />
+
+        <!-- Kg girişi -->
+        <Label text="Kg:" />
+        <TextField fx:id="kgTextField"
+                   promptText="Enter kg" />
+
+        <!-- Sepete ekle butonu -->
+        <Button fx:id="addToCartButton"
+                text="Add to Cart"
+                onAction="#handleAddToCart" />
+
+    </children>
+</VBox>
